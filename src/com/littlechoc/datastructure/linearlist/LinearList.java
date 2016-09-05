@@ -58,8 +58,8 @@ public interface LinearList<E> {
   /**
    * 在指定位置后插入一个新元素
    *
-   * @param index  位置
-   * @param data 待插入数据元素
+   * @param index 位置
+   * @param data  待插入数据元素
    * @throws IndexOutOfBoundsException 当index < 0 || index >= list.length时，抛出异常
    */
   void add(int index, E data) throws IndexOutOfBoundsException;

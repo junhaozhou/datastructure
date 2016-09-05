@@ -1,13 +1,10 @@
 package com.littlechoc.datastructure.linearlist;
 
-import java.util.InputMismatchException;
-import java.util.Objects;
-
 /**
  * @author 周俊皓.
  *         2016-07-16 19:50
  */
-public class ArrayLinearList<E> implements LinearList<E> {
+public class ArrayList<E> implements LinearList<E> {
 
   /**
    * 线性表默认容量和扩展容量
@@ -27,7 +24,7 @@ public class ArrayLinearList<E> implements LinearList<E> {
   /**
    * 创建一个数组线性表，具有默认的大小
    */
-  public ArrayLinearList() {
+  public ArrayList() {
     elements = new Object[DEFAULT_CAPACITY];
     length = 0;
   }
@@ -112,5 +109,6 @@ public class ArrayLinearList<E> implements LinearList<E> {
 
   private void ensureCapacity(int capacity) {
     // TODO 确认空间是否充足，不充足则需要扩容
+//    LinkedList
   }
 }
